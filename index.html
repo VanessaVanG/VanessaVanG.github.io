@@ -9,12 +9,15 @@
     <link rel="stylesheet" href="https://bootswatch.com/4/lux/bootstrap.min.css">
 
     <title>Summary: Latitude vs. X</title>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
   </head>
+
   <body>
     <!-- navbar -->
     <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
       <div class="container">
-        <a class="navbar-brand order-1" href="index.html">Latitude Dashboard</a>
+        <a class="navbar-brand order-1 mr-0" href="index.html">Latitude Dashboard</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -51,19 +54,19 @@
         <!-- summary -->
         <div class="col-lg-7">
           <h1 class="mb-4">Summary: Latitude vs. X</h1>
-          <hr>
+          <hr class="mr-4">
           <img class="p-3" src="img/temp.png" alt="vs. max temperature" height="220" width="260" align="left">
-          <p class="pt-3 mr-2">This project's purpose is to show if there is a relationship between latitude and four factors: max temperature, wind speed, humidity, and cloud cover. The city data was pulled from citypy and weather data was pulled from the OpenWeather API. </p>
-          <p class="pl-3 mr-2">500 random cities were used for this dataset. Seaborn and matplotlib were used to make the scatter plots, which show the relationship between latitude and the four factors. This site contains the visualizations, analysis, and source data.</p>
+          <p class="pt-3 mr-4">This project's purpose is to show if there is a relationship between latitude and four factors: max temperature, wind speed, humidity, and cloud cover. The city data was pulled from citypy and weather data was pulled from the OpenWeather API. 500 random cities were used for this dataset. Seaborn and matplotlib were used to make the scatter plots, which show the relationship between latitude and the four factors. </p>
+          <p class="pl-3 mr-4">While this is a representative model of weather in cities across the world, it is only a snapshot of one day's weather. A yearly or even longer historical view could offer more insight. This site contains the visualizations, analysis, and source data.</p>
         </div><!-- /summary -->
                 
         <!-- visualizations -->
-        <div class="card col-lg">
+        <div class="card col-lg ml-3">
           <h3 class="pb-4">Visualizations</h3> 
           <div class="row justify-content-center">
             <div class="col-lg-5 col-sm-3">
               <div class="card mb-3">
-                <a href="#temp" >
+                <a href="temp.html" >
                   <img class="card-img-top" src="img/temp.png" alt="vs. Max Temp">
                 </a>
                 <div class="card-body">
@@ -74,7 +77,7 @@
 
             <div class="col-lg-5 col-sm-3">
               <div class="card mb-3">
-                <a href="#humidity" >
+                <a href="humidity.html" >
                   <img class="card-img-top" src="img/humidity.png" alt="vs. Humidity">
                 </a>
                 <div class="card-body">
@@ -85,7 +88,7 @@
 
             <div class="col-lg-5 col-sm-3">
               <div class="card mb-3">
-                <a href="#cloudiness" >
+                <a href="cloud.html" >
                   <img class="card-img-top" src="img/cloud.png" alt="vs. Cloudiness">
                 </a>
                 <div class="card-body">
@@ -96,7 +99,7 @@
 
             <div class="col-lg-5 col-sm-3">
               <div class="card mb-3">
-                <a href="#wind" >
+                <a href="wind.html" >
                   <img class="card-img-top" src="img/wind.png" alt="vs. Wind Speed">
                 </a>
                 <div class="card-body">
@@ -109,6 +112,20 @@
       </div><!-- /row -->
     </div><!-- /container -->
 
+    <!-- bottom navbar -->
+    <nav class="navbar navbar-expand-sm navbar-light bg-light mt-3">
+      <div class="container">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-item nav-link" href="https://github.com/VanessaVanG/VanessaVanG.github.io" target="_blank">Website Repo</a>
+            <a class="nav-item nav-link" href="https://github.com/VanessaVanG/python-challenge/tree/master/WeatherPy" target="_blank">Weather Analysis Repo</a>
+          </div>
+        </div>
+      </div>
+    </nav>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <!-- Optional JavaScript -->
